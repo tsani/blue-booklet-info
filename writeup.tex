@@ -1,0 +1,99 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=2.0cm]{geometry}
+
+\author{Jacob Errington \& Eric Mayhew}
+\title{BLUE booklet information}
+
+\newcommand{\gametitle}{\textsc{Sixteen-Fifty}}
+
+\begin{document}
+
+\maketitle
+
+\section{Bios}
+\begin{description}
+\item[Jake.] ~ \\
+  Jake first got excited about programming as a teenager when a friend told him
+  they figured out how to make games. Jake's interests in programming have
+  fluctuated over the years, but games and game development remain nonetheless
+  an object of passion for him. In particular, he wonders how games can be used
+  in education.
+
+\item[Eric.] ~
+\end{description}
+
+The BLUE fellowship gave us both the opportunity to explore the use of games to
+teach and to excite high-schoolers about the early history a New France. This
+was a fantastic learning experience for the both of us: neither of us had built
+a game before -- at least not one of this complexity!
+
+\section{Project}
+
+\subsection{Motivation}
+
+The working title of our game, \gametitle, reflects in part the time period
+in which it is set: the early colonial history of New France. But why choose to
+focus on this time period specifically?
+\begin{description}
+  \item[Standardized testing.]
+    In Quebec, all high school students must pass a standardized test on Quebec
+    history, which includes a section on New France. As with the other tests,
+    the history test has a startling failure rate, which we believe can be
+    ameliorated by using novel teaching methods. Simply put, kids like games;
+    it's hard even to get the off their phones in class! So why not meet them at
+    their level, with a way to use their phones for educational purposes?
+  \item[Historical revisionism.]
+    The early history of New France is typically presented in a way that
+    underrepresents the presence and importance of Indigenous Peoples.
+    For example, it surprises many when we tell them that colonial settlements
+    typically had Indigenous people walking around them. Another underemphasized
+    occurrence is the annual trade fair in Ville-Marie (Montreal) in which
+    colonists and Indigenous people took part both in trade and in celebration.
+    Therefore, one aim of our game is to convey some of the additional
+    complexities of the collaborations and conflicts between Indigenous Peoples
+    and colonists.
+\end{description}
+%
+To address these two primary concerns, we chose to design \gametitle{} as a
+\emph{role-playing game} (RPG), in which the player controls a character through
+whom they can experience the early history of New France first-hand.  The player
+completes a series of \emph{quests}, some of which represent major historical
+events and some of which represent additional events we simply thought were
+interesting.
+
+\subsection{Implementation}
+
+Making a game requires work on many fronts, which we distilled into three
+categories: the art, the story, and the engine.
+
+Jake took charge of programming the game engine.
+The game engine defines all the semantic concepts in the game,
+such as the kinds of worlds the player can explore, the entities that exist in
+these worlds, and the types of interactions the player character can have with
+those entities. Furthermore, it's essential to build \emph{editors} for these
+things: as game designers, we need high-level tools to manipulate worlds,
+characters, and interactions without needing to dive directly into the game's
+code. We're very proud of the \emph{event editor} in figure~1. This editor
+ultimately evolved an \emph{embedded programming language} complete with
+conditions and the ability to chain \emph{event scripts} together.
+
+Eric took charge of the art and the story.
+We chose a style called \emph{pixel art} on the one hand because we personally
+like it, and on the other hand because we thought that the constraints it
+imposes would help us to be productive. In figure~2, you can see a part of the
+Quebec City map that Eric created. This map is historically accurate: in
+figure~3 you can see a historical diagram of Quebec City's lower town, which in
+the basis for figure~2.
+
+\subsection{Future work}
+
+\gametitle{} is not finished. In retrospect we were naive to think we could
+arrive at a finished game in no more than eight weeks! What's left is to
+translate the history into a series of main quests and side quests and to create
+tons more art. As for the game engine, even expressing simple quests is quite
+challenging in the embedded programming language, so some work will be needed to
+soften the edges a bit on it. We look forward to tackling the next steps and to
+someday have students playing and learning from our game!
+
+\end{document}
